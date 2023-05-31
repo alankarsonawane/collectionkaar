@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collectionkaar.com</title>
+  <link rel="stylesheet" type="text/css" href="practice.css">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+  
+  <!-----Update on 14 may for sidebar and header---->
+  
+  <div id="body">
+  <header id="header" ondblclick="changColor()">
+  <div id="menu">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+  </div>
+  <div id="title">
+    <h2>COLLECTIONKAAR</h2>
+  </div>
+  <div id="cart">
+   <i class="fa fa-shopping-cart"></i>
+  </div><!---
+<marquee>
+<p>
+  Get 50% off on  hoodies </p>
+</marquee>---->
+</header>
+<!--headertag position changed-->
+
+<!------Sidebar code start----->
+
+<div id="sidebar">
+  <i class="fa fa-times" onclick="closeBar()" onmouseout="barShut()"></i>
+  <ul>
+    <li id="first">HOME</li>
+    <li>LATEST</li>
+    <li>BLOGS</li>
+    <li>CONTACT US</li>
+    <li> ABOUT US </li>
+    <li>LOG OUT</li>
+  </ul>
+</div>
+
+
+
+<!------Sdebar ends----->
+
+     
+   </pre>    
+
+
+<section>
+  <div class="images" >
+    <a href="hoodie.html">
+  <img src="images/dd.jpg"  id="img1" >
+  </a></div>
+  <div class="images">
+  <a href="jackets.html">
+  <img src="images/pink jacket.jpg">
+  </a></div>
+  
+</section>
+
+<h3>New Collection</h3>
+<hr>
+<div class="newcollection">
+  <div class="newitems">
+    <a href="collectionhoodie.html" target="myframe">
+    <h4>Hoodie</h4>
+    </a>
+  </div>
+  <div class="newitems">
+    <a href="collectiondenim.html" target="myframe">
+    <h4>Denim</h4>
+    </a>
+  </div>
+</div>
+<div class="iframe">
+<iframe  width="100%" height="250px" name="myframe" class="nb" scrolling="no"></iframe>
+</div>
+<br><center>
+  <h4>FOLLOW US ON</h4>
+</center>
+<footer>
+  <div class="logo">
+  <div class="sociallogo">
+    <img src="images/facebook-6.svg">
+  </div>
+  <div class="sociallogo">
+    <img src="images/instagram-12.svg">
+  </div>
+  <div class="sociallogo">
+    <img src="images/gmail-3.svg">
+  </div>
+  </div>
+  
+</footer>
+
+<div class="footbox">
+<div class="fbox1">
+<ul>
+  <li>HOME</li><br>
+  <li>ABOUT US</li><br>
+  <li>CONTACT US</li><br>
+  <li>COMPANY</li><br>
+  <li>POLICIES</li>
+</ul>  
+</div>
+<div class="fbox2">
+  <ul>
+    <li>TRACK ORDER</li><br>
+    <li>T & C </li><br>
+    <li>LUCKY DRWAN</li><br>
+    <li>CONTEST</li><br>
+    <li>MEMBERSHIP</li>
+  </ul>
+</div>
+
+</div>
+<div class="fcopyright">
+<center>
+  <p>Copyright <i class="fa fa-copyright"></i> All rights reserved.</p><br>
+  <h6>Designed by Alankar</h6>
+</center>
+</div>
+</div>
+
+
+<script>
+
+///sidebar functions here Show/Close
+
+ let menu = document.getElementById('sidebar');
+ 
+ //console.log(menu);
+ //console successfull
+ 
+ function barShut(){
+   sidebar.style.display="none";
+ }
+ 
+ function showBar(){
+   menu.style.display="block";
+ }
+ 
+ function closeBar(){
+   menu.style.display="none";
+ }
+ 
+</script>
+</body>
+
+</html>
