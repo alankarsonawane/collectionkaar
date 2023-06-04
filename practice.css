@@ -5,6 +5,10 @@
   padding:0px;
 }
 
+
+html{
+  scroll-behavior: smooth;
+}
 #body{
   margin-left:5px;
   margin-right:5px;
@@ -13,8 +17,97 @@
 }
 
 
-img{
 
+.topButton{
+  width:100%;
+  height:50px;
+ 
+ 
+}
+.topButton img{
+  width:50px;
+  height:50px;
+  z-index: 2;
+  position:fixed;
+  top:550px;
+  left:300px;
+  border-radius: 50%;
+}
+
+.aboutUs{
+  width:100%;
+  height:350px;
+  background-color: yellow;
+  margin-top:15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/curvybg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.enquiry h2{
+  color:maroon;
+}
+
+.enquiry input{
+  width:250px;
+  height:50px;
+  border:none;
+  border-bottom:2px solid maroon;
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+
+#comment{
+  width:250px;
+  height:100px;
+}
+.alert {
+  width: 100%;
+  height: 500px;
+  background: transparent;
+  background-color:lightgrey;
+  opacity: 80%;
+  color: darkblue;
+  position: fixed;
+  top: 15px;
+  display: none;
+  font-weight: bolder;
+  z-index:4;
+  font-size:25px;
+}
+
+.alert button {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: orange;
+  font-size: 15px;
+}
+
+.acontent{
+  margin:10px;
+ width:90%;
+ height:300px;
+ 
+  
+}
+.acontent h3{
+  color: black;
+  font-size:25px;
+  font-family:serif;
+}
+
+.acontent h4{
+  font-size:45px;
+  color:green;
+}
+
+.acontent p{
+  font-size:25px;
 }
 
 header{
@@ -57,22 +150,23 @@ marquee{
 
 #sidebar{
   width:70%;
-  height:600px;
-  background-color: black;
+  height:650px;
+  background-color:black;
   color:white;
   font-size:20px;
   display:none;
   position:absolute;
   z-index: 2;
-}
+  }
 
-#sidebar li{
+#sidebar a{
   
   margin-left:10px;
   margin-top:20px;
   border-bottom:1px solid white;
   margin-bottom: 15px;
   text-align: center;
+  font-size:20px;
 }
 
 #sidebar i{
@@ -81,19 +175,26 @@ marquee{
   left:230px;
 }
 
-
+.pager{
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+}
 
 .pager h3{
   border:1px solid grey;
   text-align:center;
-  padding:5px 3px 5px 3px;
   border-radius:35px;
-  
+  padding:5px;
+  font-size:18px;
+  font-family:tahoma;
 }
 .pbt{
   
   width:100px;
-  float:left;
   
 }
 
@@ -105,6 +206,7 @@ marquee{
   margin-top:20px;
   box-shadow:5px 5px 5px grey;
   border-radius:35px;
+
 }
 
 .images img{
@@ -169,16 +271,6 @@ h3{
 
 
 
-
-
-
-
-
-
-
-
-
-
 footer{
   margin-top:50px;
   color:white;
@@ -186,9 +278,10 @@ footer{
 
 .logo{
   width:100%;
-  height:40px;
+  height:60px;
   display:flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 15px;
   
 }
@@ -196,7 +289,7 @@ footer{
 .sociallogo img{
   width:50px;
   height:40px;
-  padding-left:15px;
+
 }
 
 .footbox{
@@ -251,6 +344,7 @@ header .p{
 
 
 a{
+
   text-decoration: none;
   color:black;
    font-size:13px;
@@ -265,6 +359,85 @@ a:hover{
   background-color: black;
 }
 
+
+a:visited{
+  color:black;
+  background-color: white
+}
+a:active{
+  color:white;
+  background-color:black;
+}
+
+
+.sidebar a:link{
+  color:white;
+
+}
+
+
+.sidebar a:visited{
+  color:white;
+
+}
+
+.sidebar a:hover{
+  color:white;
+  background-color: red;
+
+
+}
+
+
+.sidebar a:active{
+  color:orange;
+
+}
+
+
+.tmainbox{
+  width:100%;
+  height:700px;
+  background-color: yellow;
+}
+
+.tmainbox form{
+  margin-top: 200px;
+}
+#tparentbox{
+  position:relative;
+  z-index: 2;
+  display:none;
+  top:25px;
+}
+#tparentbox form{
+  text-align: center;
+  font-size:18px;
+  margin:30px 15px 0px 15px;
+  border:1px solid grey;
+  box-shadow:5px 5px 5px grey;
+  height:400px;
+  font-family:serif;
+  color:white;
+  background-color: black;
+}
+#tparentbox input{
+  height:25px;
+  border:1px solid black;
+  border-radius:15px;
+  font-weight:900px;
+  font-size:15px;
+}
+
+#tparentbox button{
+  width:100px;
+  height:40px;
+  background-color: white;
+  color:black;
+  padding:10px;
+  border:1px solid orange;
+  border-radius:15px;
+}
 
 
 
@@ -316,6 +489,7 @@ nav{
 }
 
 .buttons2{
+  
   margin-top: 30px;
   text-size:5px
   
@@ -327,9 +501,15 @@ nav{
   font-size:15px;
 }
 
+
+.buttons{
+  
+  margin-top:25px;
+  margin-top:30px;
+}
 .buttons a{
   border:2px solid black;
-  padding:5px;
+  padding:10px;
   word-spacing: 10px;
 }
 
@@ -340,6 +520,40 @@ background-color: black;
 }
 
 
+#submit hover:link{
+  color:white;
+  background-color: black;
+}
+
+.sizesBOx{
+  width:100%;
+  height:70px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.sizesBOx input{
+  margin-top:20px;
+}
+
+.Quantity{
+  width:100%;
+  height:100px;
+  display: flex;
+  justify-content: center;
+}
+
+.Quantity h2{
+  font-size:35px;
+}
+
+
+
+.Quantity input{
+  width:100px;
+  height:25px;
+  margin-top:15px;
+}
 .container input{
   border:1px solid black;
 }
@@ -363,7 +577,86 @@ background-color: black;
 }
 
 .himages img{
+  width:300px;
+  height:300px;
   box-shadow: 5px 5px 5px grey;
   border-radius: 35px;
   
+}
+
+#newc a:link{
+  background-color: blue;
+  color:white;
+}
+
+.slideshow{
+  width:100%;
+  height:250px;
+  background-image: url('images/flip2.jpg');
+  background-size: 100% 100%;
+  animation:slider 15s infinite linear;
+}
+
+@keyframes slider{
+  0%{
+    background-image:url('images/flip1.jpg')
+  }
+  35%{
+    background-image: url('images/flip2.jpg')
+  }
+  75%{
+    background-image: url('images/flip3.jpg')
+  }
+}
+
+
+.gallery{
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  overflow-x: scroll;
+  
+}
+
+.gallery img{
+  width:75px;
+  height:75px;
+  opacity: 50%;
+}
+
+.gallery img:hover{
+  opacity:100%;
+}
+
+
+
+.wrapper{
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-size:20px;
+  font-weight:bolder;
+}    
+
+#minus{
+  padding:10px;
+  border-right: 2px solid black;
+  border:2px solid black;
+}
+
+
+#num{
+  padding:10px;
+  border:2px solid black;
+}
+
+
+#plus{
+  padding:10px;
+  border-left: 2px solid black;
+  border:2px solid black;
 }
