@@ -18,6 +18,7 @@
   <!-----Update on 14 may for sidebar and header---->
   
   <div id="body">
+    <div class="headerBox">
   <header id="header" ondblclick="changColor()">
   <div id="menu">
     <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
@@ -33,35 +34,62 @@
   Get 50% off on  hoodies </p>
 </marquee>---->
 </header>
+</div>
 <!--headertag position changed-->
 
 <!------Sidebar code start----->
 
-<div id="sidebar">
+<div id="sidebar" class="sidebar">
   <i class="fa fa-times" onclick="closeBar()" onmouseout="barShut()"></i>
   <ul>
+    <a href="#slideshow">
     <li id="first">HOME</li>
-    <li>LATEST</li>
-    <li>BLOGS</li>
-    <li>CONTACT US</li>
-    <li> ABOUT US </li>
-    <li>LOG OUT</li>
+<a href="#newcollection">    <li>LATEST</li></a>
+<a href="#">    <li>BLOGS</li>
+<a href="#">    <li>CONTACT US</li>
+<a href="#aboutUs">    <li> ABOUT US </li>
+<a href="#">    <li>LOG OUT</li>
+    
   </ul>
 </div>
-
-
-
 <!------Sdebar ends----->
+<!----SLideshow add-->
+<div class="slideshow">
+  
+</div>
+<!----SLideshow add End-->
+  
+ 
 
-     
-   </pre>    
-
-
+  
 <section>
-  <div class="images" >
-    <a href="hoodie.html">
-  <img src="images/hone1.jpg"  id="img1" >
-  </a></div>
+ 
+  <div class="images"  >
+    
+<a href="hgrid.html">
+  <img src="images/hone1.jpg" id="img1">
+</a>
+  </div>
+  <div class="topButton">
+    <a href="#body">
+    <img src="images/top.jpg"></a>
+  </div>
+  
+<div id="tparentbox">
+    <form>
+      <i class="fa fa-times" onclick="closeSignup()"></i>
+    <h1>Sign up</h1><br>
+   Firstname:<input type="text"><br><br>
+    Lastname:<input type="text"><br><br>
+    Email:<input type="email"><br><br>
+    Password:<input type="password"><br><br>
+    <center><br><br>
+      <button>SUBMIT</button>
+    </center>
+    </form>
+  </div>
+
+  
   <div class="images">
   <a href="jackets.html">
   <img src="images/pink jacket.jpg">
@@ -69,9 +97,9 @@
   
 </section>
 
-<h3>New Collection</h3>
+<h3 id="newcollection">New Collection</h3>
 <hr>
-<div class="newcollection">
+<div class="newcollection" id="newc">
   <div class="newitems">
     <a href="collectionhoodie.html" target="myframe">
     <h4>Hoodie</h4>
@@ -86,6 +114,30 @@
 <div class="iframe">
 <iframe  width="100%" height="250px" name="myframe" class="nb" scrolling="no"></iframe>
 </div>
+<h3 id="aboutUs">About us</h3>
+<hr>
+<div class="aboutUs">
+  <center>
+  <div class="acontent">
+    <h3>Collectionkaar is Indias best<br> website for hoodies and jackets</h3>
+    <br><br>
+    <h4>100+</h4><br>
+    <p>Designs</p><br><br>
+    </center>
+  </div>
+</div>
+<center>
+  <div class="enquiry">
+  <h2>Enquiry</h2>
+  <form>
+    <input type="text" placeholder="Enter Name"><br>
+      <input type="tel" placeholder="Enter Mob No"><br>
+        <input type="email" placeholder="Enter email"><br>
+          <input type="text" id="comment" placeholder="Ask anything"><br>
+          <input type="submit">
+  </form>
+  </div>
+</center>
 <br><center>
   <h4>FOLLOW US ON</h4>
 </center>
@@ -133,6 +185,17 @@
 </div>
 </div>
 
+<div class="alert" id="alert">
+  <center>
+  <h2>Alert</h2><br><br>
+  <h3>kindly open this website<br> in mobile view only.</h3><br>
+  <h3>We are working on<br> desktop Version</h3><br>
+  <h4>Devloped by AlankarSonawane</h4><br>
+  
+  <button onclick="closealert()">OK</button>
+
+  </center>
+</div>
 
 <script>
 
@@ -149,13 +212,51 @@
  
  function showBar(){
    menu.style.display="block";
- }
+ };
  
  function closeBar(){
    menu.style.display="none";
+ };
+ 
+ function welcome(){
+   alert("Welcome to Collectionkaar")
+ };
+  
+  
+
+  let signUp =document.getElementById('tparentbox');
+  //console.log(signUp);
+  //console success
+ 
+ function showSignup (){
+   
+   signUp.style.display="block";
+ };
+ 
+ function closeSignup(){
+   signUp.style.display="none";
  }
+ 
+ //setTimeout(showSignup, 3000);
+ //setTimeout(welcome,5000);
+ 
+ 
+  let alert = document.getElementById('alert');
+  
+  function showalert(){
+    alert.style.display="block";
+  }
+  
+  function closealert(){
+    alert.style.display="none";
+  }
+
+setTimeout(showalert,1000);
  
 </script>
 </body>
 
 </html>
+
+
+
