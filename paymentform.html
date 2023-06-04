@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="practice.css">
+  <style>
+      form{
+        font-size:20px;
+        color:white;
+        font-weight:900px;
+    
+      }
+      ::placeholder{
+        color:grey;
+      }
+   form input{
+     width:300px;
+     height:30px;
+     font-size:20px;
+     border:none;
+     border-bottom:2px solid black;
+     padding-bottom:5px;
+     background:transparent;
+     color:black;
+     
+   }
+   
+   input[placeholder]{
+     color:black;
+   }
+   
+    #add{
+      height:100px;
+    }
+    
+    #radio{
+      height:15px;
+    }
+    #radio2{
+      height:15px;
+    }
+    
+.radio input{
+  width:15px;
+}
+
+button{ 
+  width:200px;
+  margin-top:20px;
+  padding:10px;
+  font-size:20px;
+  color:black;
+  background-color:white;
+  border:2px solid black;
+}
+
+
+#cv{
+  width:200px;
+}
+
+
+
+  
+  </style>
+</head>
+
+<body>
+  
+  <div class="delivery">
+  <center>
+<h2>DELIVERY DETAILS</h2>
+</center><hr></div>
+<div id="container">
+  <center>
+    <form>
+      Name:<br>
+      <input type="text" placeholder="Enter full name "  class="borders"><br><br><br>
+      Email:<br>
+      <input type="email" placeholder="Enter Mail" class="borders"><br><br><br>
+      Phone no:<br>
+      <input type="tel" placeholder="Enter Mob No " class="borders"><br><br><br>
+      Address:<br>
+      <input type="address" placeholder="Enter Adress " id="add"><br><br><br>
+     </form>    
+      <form  action="pay.html">
+    <button id="mybutton">Submit</button>
+      </form>
+    
+      </div>
+  </center>
+  
+</div>
+<br><br><br><br><hr>
+<footer>
+  <center>
+  COLLECTIONKAAR BY
+  ALANKAR !<br><br><br>
+  Powered by Alankarcode pvt. ltd.
+  </center>
+</footer>
+ <script>
+
+const button = document.getElementById('mybutton');
+
+ button.addEventListener("click", ()=>{
+   button.style.color="white";
+    button.style.backgroundColor="black";
+   button.src = "pay.html";
+ });
+
+</script> 
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hamburger </title>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
+  -->
+  
+  
+  <style>
+  
+  *{
+    margin:0px;
+    padding:0px;
+  }
+  
+  body{
+    z-index:1;
+  }
+  header{
+  margin-top:15px;
+  padding-bottom: 10px;
+  border-bottom:1px solid lightgrey;
+}
+
+#menu {
+  width:30px;
+  
+  float:left;
+}
+
+#menu i{
+    font-size: 30px;
+    margin-left:10px;
+  }
+
+#title {
+  width: 280px;
+
+  float: left;
+}
+
+#title h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+
+#cart i{
+  font-size:26px;
+}
+
+
+marquee{
+  margin-top:5px;
+}
+
+#sidebar{
+  width:70%;
+  height:600px;
+  background-color: black;
+  color:white;
+  font-size:20px;
+  display:none;
+  position:absolute;
+  z-index: 2;
+}
+
+#sidebar li{
+  
+  margin-left:10px;
+  margin-top:20px;
+  border-bottom:1px solid white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#sidebar i{
+  font-size:25px;
+  position:relative;
+  left:230px;
+}
+
+  
+  .grid-container{
+    margin: auto;
+    width:100%;
+    display:grid;
+    grid-template-columns: 180px 180px;
+    
+    grid-template-rows:300px 300px 300px 300px;
+ row-gap:10px;
+column-gap:10px;
+
+  }
+  
+  
+  h3{
+    font-family:serif;
+    font-size:20px;
+    margin-bottom:25px;
+    margin-left:10px;
+    margin-top:15px;
+  }
+  
+  
+.pager{
+  width:100%;
+  height:100px;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+}
+
+.pager h3{
+  border:1px solid grey;
+  text-align:center;
+  border-radius:35px;
+  padding:5px;
+  font-size:18px;
+  font-family:tahoma;
+}
+.pbt{
+  
+  width:100px;
+  
+}
+
+a:link{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  border:1px solid black;
+}
+
+.fcopyright{
+  background-color: black;
+  color:white;
+  height:70px;
+
+}
+
+topButton {
+  width: 100%;
+  height: 50px;
+
+
+}
+
+.topButton img {
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  position: fixed;
+  top: 550px;
+  left: 300px;
+  border-radius: 50%;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  
+  
+  <header id="header" ondblclick="changColor()">
+  <div id="menu">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+  </div>
+  <div id="title">
+    <h2>COLLECTIONKAAR</h2>
+  </div>
+  <div id="cart">
+   <i class="fa fa-shopping-cart"></i>
+  </div><!---
+<marquee>
+<p>
+  Get 50% off on  hoodies </p>
+</marquee>---->
+</header>
+<!--headertag position changed-->
+
+<!------Sidebar code start----->
+
+<div id="sidebar">
+  <i class="fa fa-times" onclick="closeBar()" onmouseout="barShut()"></i>
+  <ul>
+    <li id="first">HOME</li>
+    <li>LATEST</li>
+    <li>BLOGS</li>
+    <li>CONTACT US</li>
+    <li> ABOUT US </li>
+    <li>LOG OUT</li>
+  </ul>
+  
+</div>
+<!------Sdebar ends----->
+<!----SLideshow add-->
+<div class="slideshow">
+  
+</div>
+<!----SLideshow add End-->
+  
+ <a href="Collectionkaar.html">
+  <h3>Back</h3>
+  </a>
+  <div class="grid-container">
+    <div class="alankar-1"><a href="jacketview1.html">
+      <image src="images/jone1.jpg" width="100%" height=260px><br>
+      </a>
+      <center>
+      <h3>$450</h3>
+      </center>
+    </div>
+    <div class="alankar-2"><a href="jacketview2.html">
+      <image src="images/jtwo1.jpg" width="100%" height=260px><br>
+      </a>
+      <center>
+      <h3>$450</h3>
+      </center>
+    </div>
+    <div class="alankar-3">
+      <a href="hoodieview3.html">
+      <image src="images/hthree1.jpg" width="100%" height=260px></a><br>
+      <center>
+      <h3>$450</h3>
+      </center>
+    </div>
+    <div class="alankar-4">
+      <a href="hoodieview4.html">
+      <image src="images/hfour1.jpg" width="100%" height=260px>
+        </a>
+        <br>
+        <center>
+          <h3>$450</h3>
+        </center>
+    </div>
+    <div class="alankar-5">
+      <image src="images/ff.jpg" width="100%" height=260px><br>
+      <center>
+        <h3>$450</h3>
+      </center></div>
+    <div class="alankar-6">
+      <image src="images/cc.jpg" width="100%" height=260px><br>
+      <center>
+        <h3>$450</h3>
+      </center></div>
+    <div class="alankar-7">
+      <image src="images/cc.jpg" width="100%" height=260px><br>
+        <center>
+          <h3>$450</h3>
+        </center>
+    </div>
+    <div class="alankar-8">
+      <image src="images/cc.jpg" width="100%" height=260px><br>
+        <center>
+          <h3>$450</h3>
+        </center>
+    </div>
+  </div>
+  <center>
+    <div class="pager">
+      <div class="pbt">
+        <h3>Pre</h3>
+      </div>
+      <div class="pbt">
+        <h3>Next</h3>
+      </div>
+    </div>
+  </center>
+    <div class="topButton">
+      <a href="#header">
+        <img src="images/top.jpg"></a>
+    </div>
+<div class="fcopyright">
+<center>
+  <p>Copyright <i class="fa fa-copyright"></i> All rights reserved.</p><br>
+  <h6>Devloped by Alankar Sonawane</h6>
+</center>
+</div>
+
+
+  <script>
+  
+  
+///sidebar functions here Show/Close
+
+ let menu = document.getElementById('sidebar');
+ 
+ //console.log(menu);
+ //console successfull
+ 
+ function barShut(){
+   sidebar.style.display="none";
+ }
+ 
+ function showBar(){
+   menu.style.display="block";
+ };
+ 
+ function closeBar(){
+   menu.style.display="none";
+ };
+ 
+    
+  </script>
+  
+</body>
+
+
+</html>

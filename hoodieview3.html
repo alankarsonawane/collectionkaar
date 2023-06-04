@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="practice.css">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  #sidebar {
+    width: 70%;
+    height: 600px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  #sidebar li {
+  
+    margin-left: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+    text-align: center;
+    list-style-type:none;
+  }
+  
+  #sidebar i {
+    font-size: 25px;
+    position: relative;
+    left: 230px;
+  }
+</style>
+
+</head>
+<body>
+  
+    
+  <div id="body">
+  <header id="header" ondblclick="changColor()">
+  <div id="menu">
+    <i class="fa fa-bars" id="bars" onclick="showBar()" ></i>
+  </div>
+  <div id="title">
+    <h2>COLLECTIONKAAR</h2>
+  </div>
+  <div id="cart">
+   <i class="fa fa-shopping-cart"></i>
+  </div><!---
+<marquee>
+<p>
+  Get 50% off on  hoodies </p>
+</marquee>---->
+</header>
+<!--headertag position changed-->
+
+<!------Sidebar code start----->
+
+<div id="sidebar" class="sidebar">
+  <i class="fa fa-times" onclick="closeBar()" onmouseout="barShut()"></i>
+  <ul><a href="Collectionkaar.html">
+    <li id="first">
+      HOME 
+      </li></a>
+<a href="#"><li>LATEST</li></a>
+<a href="#"><li>BLOGS</li></a>
+<a href="#"><li>CONTACT US</li></a>
+<a href="#"><li> ABOUT US </li></a>
+<a href="#"><li>LOG OUT</li></a>
+  </ul>
+</div>
+</div>
+<!------Sdebar ends----->
+<div class="marquee">  
+<marquee>
+  <p>Get 50% off on exlusive hoodies </p>
+</marquee>
+</div>
+<hr><br><br><br><br>
+<section>
+  <center>
+    <figure>
+      <div class="himages" >
+          <img src="images/hthree1.jpg" id="image">
+          </div>
+          <center>
+        <figcaption>Price:499/-</figcaption>
+      </center>
+    
+    </figure>
+    <br><br><br><br>
+    </section>
+    <div class="gallery">
+      <image src="images/hthree1.jpg" onclick="image(this)">
+    
+    
+      <image src="images/hthree2.jpg" onclick="image(this)">
+    
+      <image src="images/hthree3.jpg" onclick="image(this)">
+        
+      
+    
+   </div>
+   <div class="sizesBOx">
+     <h3>S</h3><input type="radio" name=size>   <h3>M</h3><input type="radio" name=size> <h3>L</h3><input type="radio" name=size> <h3>XL</h3><input type="radio" name=size>
+   </div>
+   
+     <center> 
+      <h3>Quantity</h3>
+      </center>
+ <div class="wrapper">
+   <span id="minus">-</span>
+   <span id="num">01</span>
+   <span id="plus">+</span>
+   
+ </div> 
+    </div>
+<center>
+  <div class="buttons">
+  <a href="Collectionkaar.html">
+  CANCEL</a>
+  <a href="paymentform.html">
+  CHECKOUT</a></div>
+</center>
+  <div class="topButton">
+    <a href="#header">
+      <img src="images/top.jpg"></a>
+  </div>
+  
+<div class="fcopyright">
+<center>
+  <p>Copyright <i class="fa fa-copyright"></i> All rights reserved.</p><br>
+  <h6>Devloped by Alankar Sonawane</h6>
+<script>
+
+///sidebar functions here Show/Close
+
+ let menu = document.getElementById('sidebar');
+ 
+ //console.log(menu);
+ //console successfull
+ 
+ function barShut(){
+   sidebar.style.display="none";
+ }
+ 
+ function showBar(){
+   menu.style.display="block";
+ };
+ 
+ function closeBar(){
+   menu.style.display="none";
+ };
+ 
+ 
+ let fullImg = document.getElementById('image');
+ 
+function image(smallImg){
+  
+  fullImg.src = smallImg.src;
+}
+
+const minus = document.getElementById('minus');
+
+const num = document.getElementById('num');
+
+const plus = document.getElementById('plus');
+
+plus.addEventListener("click", addition);
+
+a = 1;
+
+function addition() {
+  a++;
+  num.innerText = a;
+};
+
+minus.addEventListener("click", substract);
+
+function substract() {
+  a--;
+  num.innerText = a;
+}
+  
+</script>
+</body>
+
+</html>
